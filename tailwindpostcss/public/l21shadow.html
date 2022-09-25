@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow And Drop Shadow</title>
+    <link rel="stylesheet" href="./tailwind.css" type="text/css">
+</head>
+<style>
+    body{
+        background: #f1f1f1;
+    }
+
+    .box{
+        width:200px;
+        height: 200px;
+        background: #f4f4f4;
+        margin: 20px;
+        /* border:1px solid #000; */
+    }
+
+    .d-flex{
+        width: 600px;
+        display: flex;
+
+    }
+</style>
+<body>
+    
+    <div class="d-flex">
+        <div class="box shadow-none "></div>
+        <div class="box drop-shadow-none  "></div>
+    </div>
+
+    <hr>
+
+    <div class="d-flex">
+        <div class="box shadow-sm  "></div>
+        <div class="box drop-shadow-sm  "></div>
+    </div>
+
+    <hr>
+
+
+    <div class="d-flex">
+        <div class="box shadow  "></div>
+        <div class="box drop-shadow  "></div>
+    </div>
+
+    <hr>
+
+
+    <div class="d-flex">
+        <div class="box shadow  "></div>
+        <div class="box drop-shadow  "></div>
+    </div>
+
+    <hr>
+
+    <div class="d-flex">
+        <div class="box shadow-md  "></div>
+        <div class="box drop-shadow-md  "></div>
+    </div>
+
+    <hr>
+
+
+    <div class="d-flex">
+        <div class="box shadow-lg  "></div>
+        <div class="box drop-shadow-lg  "></div>
+    </div>
+
+    <hr>
+
+
+    <div class="d-flex">
+        <div class="box shadow-2xl  "></div>
+        <div class="box drop-shadow-2xl  "></div>
+    </div>
+
+    <hr>
+    
+    <div class="box shadow-inner  "></div>
+
+</body>
+</html>
+
+<!--                             h v b c,h v b c
+    1.shadow-none     box-shadow:0 0 0 #000; 
+    2.shadow-sm
+    3.shadow
+    4.shadow-md
+    5.shadow-lg
+    6.shadow-xl
+    7.shadow-2xl
+
+    8.shadow-inner
+ -->
+
+ <!--                          function ဆို comma မပါဘူး
+    1.drop-shadow-none        filter:drop-shadow(0 0 0 #000);
+    2.drop-shadow-sm
+    3.drop-shadow
+    4.drop-shadow-md
+    5.drop-shadow-lg
+    6.drop-shadow-xl
+    7.drop-shadow-2xl
+  -->
