@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
+    <link rel="stylesheet" href="./tailwind.css" type="text/css">
+</head>
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        background: silver;
+    }
+
+    .div1{
+        width:100px;
+        height: 100px;
+        background: black;
+        color: #fff;
+    }
+
+    .div2{
+        width:100px;
+        height: 100px;
+        background: orange;
+        color: #fff;
+    }
+
+</style>
+
+<body>
+
+    <div class="box flex">
+        <div class="div1 order-1">1</div>
+        <div class="div2 order-8">8</div>
+        <div class="div1 order-2">2</div>
+        <div class="div2 order-9">9</div>
+        <div class="div1 order-3">3</div>
+        <div class="div2 order-10">10</div>
+        <div class="div1 order-4">4</div>
+        <div class="div2 order-11">11</div>
+        <div class="div1 order-5">5</div>
+        <div class="div2 order-12">12</div>
+        <div class="div2 order-6">6</div>
+        <div class="div1 order-first">13</div>
+        <div class="div2 order-7">7</div>
+        <div class="div1 order-last">14</div>
+    </div>
+
+    <br/>
+
+        <div class="box grid">
+            <div class="div1 order-1">1</div>
+            <div class="div2 order-8">8</div>
+            <div class="div1 order-2">2</div>
+            <div class="div2 order-9">9</div>
+            <div class="div1 order-3">3</div>
+            <div class="div2 order-10">10</div>
+            <div class="div1 order-4">4</div>
+            <div class="div2 order-11">11</div>
+            <div class="div1 order-5">5</div>
+            <div class="div2 order-12">12</div>
+            <div class="div2 order-6">6</div>
+            <div class="div1 order-first">13</div>
+            <div class="div2 order-7">7</div>
+            <div class="div1 order-last">14</div>
+        </div>
+
+</body>
+
+</html>
+
+<!-- 
+
+    order-1             order-1
+    order-2             order-2
+    order-3             order-3
+    order-4             order-4
+    order-5             order-5
+    order-6             order-6
+    order-7             order-7
+    order-8             order-8
+    order-9             order-9
+    order-10            order-10
+    order-11            order-11
+    order-12            order-12
+
+    order-first            order:-9999;
+    order-last             order:9999;
+    order-none             order:0;
+
+
+ -->
+
+ <!-- 
+    5OD
+  -->

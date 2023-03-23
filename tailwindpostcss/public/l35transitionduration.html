@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <link rel="stylesheet" href="./tailwind.css" type="text/css">
+</head>
+<style>
+    .box{
+        width: 1200px;
+        height: 200px;
+        background: steelblue;
+    }
+
+    img{
+        width:200px;
+        height: 100%;
+    }
+
+    img:hover {
+        transform: translate(1000px);
+    }
+</style>
+
+<body>
+
+
+    <div class="box">
+        <img src="./img/cat.jpg" class="transition duration-75 ease-linear" alt="cat">
+    </div>
+    <hr>
+
+    <div class="box">
+        <img src="./img/cat.jpg" class="transition duration-100 ease-linear" alt="cat">
+    </div>
+    <hr>
+
+
+    <div class="box">
+        <img src="./img/cat.jpg" class="transition duration-200 ease-linear" alt="cat">
+    </div>
+    <hr>
+
+
+    <div class="box">
+        <img src="./img/cat.jpg" class="transition duration-300 ease-linear" alt="cat">
+    </div>
+    <hr>
+
+
+    <div class="box">
+        <img src="./img/cat.jpg" class="transition duration-700 ease-linear" alt="cat">
+    </div>
+    <hr>
+
+
+    <div class="box">
+        <img src="./img/cat.jpg" class="transition duration-1000 ease-linear" alt="cat">
+    </div>
+    <hr>
+
+
+
+
+
+</body>
+
+</html>
+
+<!-- 
+duration-75     transition-duration:75ms;
+duration-100    transition-duration:100ms;
+duration-200    transition-duration:200ms;
+duration-300    transition-duration:300ms;
+duration-500    transition-duration:500ms;
+duration-700    transition-duration:700ms;
+duration-1000   transition-duration:1000ms; အများဆုံး
+
+ -->
+
+<!-- 
+delay-75     transition-delay:75ms;
+delay-100    transition-delay:100ms;
+delay-200    transition-delay:200ms;
+delay-300    transition-delay:300ms;
+delay-500    transition-delay:500ms;
+delay-700    transition-delay:700ms;
+delay-1000   transition-delay:1000ms; 
+
+ -->
+
+<!-- 
+ease-linear    transition-timing-function:linear;
+ease-in    transition-timing-function:ease-in;
+ease-out    transition-timing-function:ease-out;
+ease-in-out    transition-timing-function:ease-in-out;
+
+  -->
